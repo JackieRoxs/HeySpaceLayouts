@@ -1,0 +1,28 @@
+.top {
+  background-image: url('https://github.com/JackieRoxs/HeySpaceLayouts/blob/main/ClubPenguin/topBar.png?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+img.logo.logo-fallback {
+  position: relative;
+}
+
+img.logo.logo-fallback::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://raw.githubusercontent.com/JackieRoxs/HeySpaceLayouts/main/ClubPenguin/spaceHeyPenguin.png');
+  background-size: cover;
+  z-index: 1; /* Place the overlay image above the original image */
+}
